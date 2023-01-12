@@ -2,7 +2,6 @@
 #include <thread>
 #include <chrono>
 
-
 void count(int amt, char whichWay, int speed){
 
     switch(whichWay){
@@ -29,7 +28,6 @@ void count(int amt, char whichWay, int speed){
 }
 
 int main() {
-
     std::thread thread1{&count, 20, 'f', 250}; //create a new thread that calls the count function. this will immediately call the function.
     std::cin.get(); //wait for user to press enter.
     thread1.join(); //syncs functions and returns the thread.
