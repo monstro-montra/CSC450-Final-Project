@@ -3,7 +3,6 @@
 #include <chrono>
 
 void count(int amt, char whichWay, int speed){
-
     switch(whichWay){
         case 'f': //f stands for forward. when it whichWay is set to 'f' count forward.
             for (int i = 0; i <= amt; i++){ //start at 0 until i > amt. increment starting at 0
